@@ -1,7 +1,16 @@
-buildscript {
-    repositories { google(); mavenCentral() }
-    dependencies { classpath 'com.android.tools.build:gradle:8.2.0' }
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
-allprojects {
-    repositories { google(); mavenCentral() }
+
+android {
+    namespace 'com.example.arena'
+    compileSdk 34
+    defaultConfig {
+        applicationId "com.example.arena"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
 }
